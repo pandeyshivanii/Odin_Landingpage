@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: url(/home/shivanip226/Odin_Landingpage/pexels-zen-chung-5749807.jpg) no-repeat center center fixed; 
+    background: url(/home/shivanip226/Odin_Landingpage/images/pexels-zen-chung-5749807.jpg) no-repeat center center fixed; 
     background-size: cover; /* Ensures the image covers the screen without distortion */
     background-attachment: fixed; /* Keeps the image static while scrolling */
 }
@@ -292,7 +292,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(/home/shivanip226/Odin_Landingpage/pexels-zen-chung-5749807.jpg) no-repeat center center fixed;
+    background: url(/home/shivanip226/Odin_Landingpage/images/pexels-zen-chung-5749807.jpg) no-repeat center center fixed;
     background-size: cover;
     z-index: -1; /* Pushes the image to the back */
     opacity: 0.3; /* Makes the background slightly transparent */
