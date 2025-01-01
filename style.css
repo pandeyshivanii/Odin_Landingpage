@@ -1,0 +1,300 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url(/home/shivanip226/Odin_Landingpage/pexels-zen-chung-5749807.jpg) no-repeat center center fixed; 
+    background-size: cover; /* Ensures the image covers the screen without distortion */
+    background-attachment: fixed; /* Keeps the image static while scrolling */
+}
+
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(12, 12, 12, 0.8); /* Semi-transparent background */
+    color: #fff;
+    position:static;
+    top: 0; /* Keeps the header at the top while scrolling */
+    z-index: 10;
+}
+
+.main-header .logo {
+    font-size: 2rem; /* Increase size for better visibility */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text appear prominent */
+    color: #f0a500; /* Highlight the logo with an attractive color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #333, #555); /* Gradient background for the logo */
+    transition: transform 0.3s ease, background-color 0.6s ease-in;
+    cursor: pointer;
+}
+
+.main-header .logo:hover {
+    background: linear-gradient(135deg, #749f1f, #666); /* Subtle hover effect */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    color: #fff; /* Change color on hover */
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    padding: 0.5rem 0.5rem; /* Add padding around links for better clickability */
+    border: 2px solid transparent; /* Optional: Border for hover effect */
+    transition: color 0.3s, border 0.3s; /* Smooth hover effects */
+}
+
+.nav-bar a:hover {
+    color: #f0a500; /* Highlight color on hover */
+    border-color: #f0a500; /* Add border color on hover */
+    border-radius: 4px; /* Rounded corners for the hover effect */
+}
+
+/* Hero Section */
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+    line-height: 1.5; /* Reduce gap between lines */
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+#hero h1 {
+    font-size: 3.5rem; /* Slightly smaller for balance */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+#hero p {
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: 500; /* Regular weight for a professional look */
+    margin-bottom: 1rem;
+    line-height: 1.5; /* Balanced spacing */
+    max-width: 600px; /* Limit width for better readability */
+    z-index: 1;
+}
+
+#hero a {
+    display: inline-block;
+    background-color: #f0a500;
+    color: #333;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1;
+}
+
+#hero a:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+
+
+/* Content Section */
+.content-section {
+    padding: 4rem 2rem; /* More padding for better spacing */
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+.content-section:nth-child(even) {
+    background-color: #eaeaea; /* Alternate background color */
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    display: inline-block;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Services Section */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    gap: 1rem; /* Adds space between items */
+}
+/* Service Item Styling */
+.service-item {
+    flex: 1 1 30%; /* Each item takes up 30% of the container width */
+    background: #999595;
+    background: rgba(20, 16, 16, 0.8);
+    padding: 1.5rem;
+    border: 5px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.5s ease, background-color 0.3s ease;
+    box-shadow: 2px 4px 6px rgba(229, 196, 7, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Service Items */
+.service-item:hover {
+    transform: scale(1.05) translateY(-8px); /* Slight scaling and elevation */
+    box-shadow: 0 20px 30px rgba(32, 14, 2, 0.768); /* More prominent shadow */
+    background-color: #f5f5f1; /* Slightly different background on hover */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+}
+
+/* Heading Styling for Service Items */
+.service-item h3 {
+    font-size: 1.8rem;
+    display: inline-block;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change Heading Color on Hover */
+.service-item:hover h3 {
+    color: #f0a500; /* Attractive highlight color */
+}
+
+/* Paragraph Styling for Service Items */
+.service-item p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change Paragraph Text Color on Hover */
+.service-item:hover p {
+    color: #444; /* Slightly darker text for contrast */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 45%; /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%; /* 1 item per row on small screens */
+    }
+}
+
+
+/* Styling for alternating content sections */
+.content-section:nth-child(even) .service-item {
+    background-color: #eaeaea;
+}
+
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.services-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex: 1;
+    max-width: 300px;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Additional Styles */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/home/shivanip226/Odin_Landingpage/pexels-zen-chung-5749807.jpg) no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1; /* Pushes the image to the back */
+    opacity: 0.3; /* Makes the background slightly transparent */
+}
+
